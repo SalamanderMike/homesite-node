@@ -1,0 +1,30 @@
+{
+  "name": "homesite_node",
+  "description": "home SPA site for Michael McClure",
+  "main": "server.js",
+  "authors": [
+    "Michael McClure"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/SalamanderMike/homesite-node",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8",
+    "angular-route": "~1.5.8",
+    "angular-resource": "~1.5.8",
+    "angular-sanitize": "~1.5.8",
+    "angular-translate": "~2.8.1",
+    "angular-translate-loader-static-files": "~2.8.1",
+    "font-awesome": "fontawesome#~4.4.0",
+    "angular-qrcode": "monospaced/angular-qrcode#^6.2.1"
+  },
+  "resolutions": {
+    "angular": "~1.5.8"
+  }
+}

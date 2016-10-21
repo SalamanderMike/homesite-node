@@ -1,0 +1,26 @@
+{
+  "name": "homesite_node",
+  "version": "0.0.1",
+  "description": "home SPA site for Michael McClure",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalamanderMike/homesite-node.git"
+  },
+  "author": "Michael McClure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SalamanderMike/homesite-node/issues"
+  },
+  "homepage": "https://github.com/SalamanderMike/homesite-node#readme",
+  "dependencies": {
+    "angular-qrcode": "^6.2.1",
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"TITLE":			"Michael McClure",
+	"SUBTITLE":			"Home Site",
+	"GREETING":			"Hello",
+
+	"INTRO":			"INTRODUCE",
+	"PROJECTS":			"PROJECTS",
+	"APIS":				"APIs",
+	"HISTORY":			"HISTORY",
+	"LOCALE":			"LANGUAGE",
+
+	"chooseLanguage": 	"Want to view this site in Mandarin?"
+}

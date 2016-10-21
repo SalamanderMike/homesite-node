@@ -1,0 +1,47 @@
+<% include ./partials/header.ejs %>
+
+<div>
+	<ul class="nav nav-tabs" id="hide-tabs">
+	    <div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
+			<a href="" ng-click="app.tabFunction(key)" ng-bind="key | translate"></a>
+	    </div> 
+	</ul> 
+
+
+	<div class="tab-content">
+
+		<div title="{{ 'INTRO' | translate }}" class="tab-pane" ng-class="{active : views.INTRO}">
+			<p>Site under new construction! Feel free to explore the minimal content curently on this site, but please come back for more goodies later.</p>
+		</div>
+
+		<div title="{{ 'PROJECTS' | translate }}" class="tab-pane" ng-class="{active : views.PROJECTS}">
+			<p>For now, please refer to my LinkedIn profile here:</p>
+			<a href="http://www.linkedin.com/in/michael-mcclure-69494655">Linkedin/MichaelJohnMcClure</a>
+
+		</div>
+
+		<div title="{{ 'APIS' | translate }}" class="tab-pane" ng-class="{active : views.APIS}">
+			<p>For now, please refer to my LinkedIn profile here:</p>
+			<a href="www.linkedin.com/in/michael-mcclure-69494655">Linkedin/MichaelJohnMcClure</a>
+		</div>
+
+		<div title="{{ 'HISTORY' | translate }}" class="tab-pane" ng-class="{active : views.HISTORY}">
+			<p>For now, please refer to my LinkedIn profile here:</p>
+			<a href="www.linkedin.com/in/michael-mcclure-69494655">Linkedin/MichaelJohnMcClure</a>
+		</div>
+
+		<div title="{{ 'LOCALE' | translate }}" class="tab-pane" ng-class="{active : views.LOCALE}">
+			<div class="content-position">
+				{{'chooseLanguage' | translate}}: 
+				<select ng-model="choice" 
+						ng-change="app.chooseLanguage(choice)" 
+						data-ng-options="choice for choice in languages">
+						<option value="" selected>Select Language</option>
+				</select>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<% include ./partials/footer.ejs %>
