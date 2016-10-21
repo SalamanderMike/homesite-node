@@ -23,8 +23,6 @@ app.set('view engine', 'ejs');
 
 // APIs
 var env = process.env.GOOGLE_KEY || 'develop';
-console.log("TEST:",env);
-
 app.get('/config', function(req, res) {
 	if (env !== 'develop') {
 		res.send(env);

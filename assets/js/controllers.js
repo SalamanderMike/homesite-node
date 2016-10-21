@@ -22,8 +22,6 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 		$http.get('/config').then(function(response) {
 			var map_auth = "https://maps.googleapis.com/maps/api/js?key="+ response.data;
 			var script = document.createElement('script');
-			console.log(response);
-
 			script.type = 'text/javascript';
 			script.src = map_auth;
 			document.body.appendChild(script);
