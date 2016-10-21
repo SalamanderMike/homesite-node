@@ -1,11 +1,11 @@
 var express = require('express'),
-	Config = require('./assets/resources/config.js'),		// DISABLED FOR PRODUCTION
+	// Config = require('./assets/resources/config.js'),		// DISABLED FOR PRODUCTION
 	bodyParser  = require('body-parser'),
 	path = require('path'),
 	app = express();
 
 // DISABLED FOR PRODUCTION
-var conf = new Config();
+// var conf = new Config();
 
 // Middleware
 app.use(bodyParser.urlencoded({extended: true}));
