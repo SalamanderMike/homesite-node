@@ -1,11 +1,11 @@
-var config = 
-	// require('./assets/resources/config.js').env,											// DISABLED FOR PRODUCTION
-	express = require('express'),
+var express = require('express'),
+	Config = require('./assets/resources/config.js'),		// DISABLED FOR PRODUCTION
 	bodyParser  = require('body-parser'),
 	path = require('path'),
 	app = express();
 
-
+// DISABLED FOR PRODUCTION
+var conf = new Config();
 
 // Middleware
 app.use(bodyParser.urlencoded({extended: true}));
@@ -23,14 +23,14 @@ app.set('view engine', 'ejs');
 
 // APIs
 var env = process.env.GOOGLE_KEY || 'develop';
+console.log("TEST:",env);
 
-app.get('/config', function (req, res) {
+app.get('/config', function(req, res) {
 	if (env !== 'develop') {
 		res.send(env);
 	} else {
-		console.log("PING");
-		res.json({result: process.env.LOCAL_ENV});
-	}
+		res.send(conf.GOOG);
+	};
 });
 
 

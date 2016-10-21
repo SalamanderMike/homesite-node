@@ -18,14 +18,21 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 
 
 // GOOGLE MAPS
-	$http.get('/config').then(function(response) {
-		map_auth = "https://maps.googleapis.com/maps/api/js?key="+ response.data.result +"&callback=initMap";
+	(function() {
+		$http.get('/config').then(function(response) {
+			var map_auth = "https://maps.googleapis.com/maps/api/js?key="+ response.data;
+			var script = document.createElement('script');
+			console.log(response);
 
-		var googlMaps = angular.element('<script></script>');
-		googlMaps.attr('src', map_auth);
-	}).catch(function() {
-		console.log("Could Not Find ENV Variable");
-	});
+			script.type = 'text/javascript';
+			script.src = map_auth;
+			document.body.appendChild(script);
+		}), function(err) {
+			console.log("Could Not Find ENV Variable", err);
+		};
+	})();
+
+
 
 	function initialize() {
 		var location = new google.maps.LatLng(37.7749, -122.4194);
