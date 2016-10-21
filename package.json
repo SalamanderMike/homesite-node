@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/SalamanderMike/homesite-node#readme",
   "dependencies": {
-    "angular-qrcode": "^6.2.1",
     "body-parser": "^1.15.2",
     "bower": "^1.7.9",
     "ejs": "^2.5.2",
