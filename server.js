@@ -21,7 +21,17 @@ app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
 
 
+// APIs
+var env = process.env.GOOGLE_KEY || 'develop';
 
+app.get('/config', function (req, res) {
+	if (env !== 'develop') {
+		res.send(env);
+	} else {
+		console.log("PING");
+		res.json({result: process.env.LOCAL_ENV});
+	}
+});
 
 
 // ROUTES

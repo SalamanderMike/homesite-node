@@ -77,6 +77,22 @@ select {
 	cursor:pointer;
 }
 
+#map {
+	position: relative;
+	top: 0px;
+	right: 0px;
+	float: left;
+	height: 300px;
+	width: 400px;
+	/*box-shadow: inset 5px 7px 10px 0px rgba(0,0,0, 0.4);*/
+	border: solid 2px #b0b0b0;
+}
+
+.map-spacer {
+	position: relative;
+	margin: 300px;
+}
+
 /*TABS AND PANELS (GENERAL)***************************************************/
 .nav.nav-tabs {
 	position: relative;

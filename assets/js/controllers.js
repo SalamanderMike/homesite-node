@@ -1,6 +1,6 @@
 Crtl = angular.module('Controllers', []);
 
-Crtl.controller('AppController', ['$scope', '$rootScope', '$translate', function ($scope, $rootScope, $translate) {
+Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '$translate', function ($scope, $rootScope, $http, $timeout, $translate) {
 	var app = this;
 	$scope.languages = ['中国（简体)','English'];
 	$scope.focusFocus = false;
@@ -17,17 +17,51 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$translate', function
 // END OF TEST AREA
 
 
+// GOOGLE MAPS
+	$http.get('/config').then(function(response) {
+		map_auth = "https://maps.googleapis.com/maps/api/js?key="+ response.data.result +"&callback=initMap";
+
+		var googlMaps = angular.element('<script></script>');
+		googlMaps.attr('src', map_auth);
+	}).catch(function() {
+		console.log("Could Not Find ENV Variable");
+	});
+
+	function initialize() {
+		var location = new google.maps.LatLng(37.7749, -122.4194);
+		var mapOptions = { 
+			center: location,
+			zoom: 12,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+
+		var marker = new google.maps.Marker({
+		    position: location,
+		    title:"Best City In The World!"
+		});
+		map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		marker.setMap(map);
+	};
+	
+
+
+
 // SECTION: NAV-TABS
 	app.tabFunction = function(tab) {
 		console.time("TAB-FUNCTION");							// PERFORMANCE TESTING
 		views = $scope.views;
-		angular.forEach(Object.keys(views), function (page) {
+		angular.forEach(Object.keys(views), function(page) {
 			if (tab != page) {
 				views[page] = false;
 			} else {
 				views[page] = true;
 			};
 		});
+		if (tab === "APIS") {
+			$timeout(function() {
+				initialize();
+			},0);
+		};
 		$scope.views = views;
 		console.timeEnd("TAB-FUNCTION");						// PERFORMANCE TESTING
 	};
