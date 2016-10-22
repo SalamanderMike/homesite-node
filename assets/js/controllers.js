@@ -6,11 +6,11 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 	$scope.focusFocus = false;
 	$scope.toggle = true;
 	$scope.views = {
-		INTRO: 		false,
+		INTRO: 		true,
 		PROJECTS: 	false,
 		APIS: 		false,
 		HISTORY: 	false,
-		LOCALE: 	true
+		LOCALE: 	false
 	};
 
 
