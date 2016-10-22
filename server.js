@@ -1,4 +1,9 @@
-var express = require('express'),
+var opbeat = require('opbeat').start({
+		appId: process.env.OPBEAT_APP_ID,
+		organizationId: process.env.OPBEAT_ORGANIZATION_ID,
+		secretToken: process.env.OPBEAT_SECRET_TOKEN
+	}),															// OPBEAT ANALYTICS
+	express = require('express'),
 	// Config = require('./assets/resources/config.js'),		// DISABLED FOR PRODUCTION
 	bodyParser  = require('body-parser'),
 	path = require('path'),
@@ -19,6 +24,7 @@ app.use('/locales', express.static(path.join(__dirname + '/locales')));						// 
 app.use('/bower_components', express.static(path.join(__dirname + '/bower_components')));	// PLACE BOWER REQUIREMENTS
 app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
+app.use(opbeat.middleware.express());		// ANALYTICS
 
 
 // APIs
