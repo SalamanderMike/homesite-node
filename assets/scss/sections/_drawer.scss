@@ -1,0 +1,57 @@
+#drawer-show {
+	visibility: hidden;
+}
+#drawer-activate {
+	position: fixed;
+	top: 5px;
+	left: 20px;
+	font-size: 4em;
+	color: #fff6b7;
+	cursor: pointer;
+}
+#spacer {
+	top: 100px;
+}
+
+.border-box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+drawer {
+	display: block;
+}
+drawer > div {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	width: 700px;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-transition: -webkit-transform ease 250ms;
+	-moz-transition: -webkit-transform ease 250ms;
+	-ms-transition: -webkit-transform ease 250ms;
+	-o-transition: -webkit-transform ease 250ms;
+	transition: -webkit-transform ease 250ms;
+	-webkit-transition: transform ease 250ms;
+	-moz-transition: transform ease 250ms;
+	-ms-transition: transform ease 250ms;
+	-o-transition: transform ease 250ms;
+	transition: transform ease 250ms;
+}
+drawer > div {
+	background: rgba(0, 0, 0, .7);
+	height: 100%;
+	left: -700px;
+	font-size: 4em;
+}
+drawer > div.show {
+	transform: translate3d(700px, 0, 0);
+	-ms-transform: translate3d(700px, 0, 0);
+	-webkit-transform: translate3d(700px, 0, 0);
+	-o-transform: translate3d(700px, 0, 0);
+	-moz-transform: translate3d(700px, 0, 0);
+}
+drawer > div > div:hover {
+	color: #30659b;
+}
