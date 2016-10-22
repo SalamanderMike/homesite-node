@@ -20,33 +20,27 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   z-index: -10; }
 
-body section {
+.titles {
   text-align: center;
   font-size: 1.5em;
   color: #fff6b7; }
-
-body h1, input {
-  color: #30659b; }
-
-body label {
-  cursor: pointer; }
-
-.horizontal-line {
-  border-color: #1e1e1e;
-  width: 50%; }
-
-a.red {
-  color: #BF3F3F;
-  text-decoration: none; }
-
-.red:hover {
-  color: #BF593F;
-  text-decoration: none; }
+  .titles h1 {
+    color: #30659b; }
+  .titles p {
+    position: relative;
+    top: -20px;
+    margin-top: 0px; }
+  .titles hr {
+    border-color: #1e1e1e;
+    width: 50%; }
 
 .input-bg {
   width: 90%;
   background-color: #FAFADF;
   color: #606060; }
+
+a, a:active, a:focus {
+  outline: none; }
 
 #map {
   position: relative;
@@ -119,6 +113,7 @@ drawer > div > div:hover {
 
 .nav.nav-tabs {
   position: relative;
+  top: -20px;
   min-width: 482px;
   width: 100%;
   margin: 50px 0;
@@ -137,29 +132,23 @@ drawer > div > div:hover {
   -moz-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
   box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25); }
 
-.nav-tabs > div > a {
-  border: none; }
-
-.nav-tabs > div {
+.nav-tabs div {
   display: inline;
   margin: 0 17px; }
-
-.nav-tabs > div > a:hover {
-  background-color: transparent !important;
-  border: none;
-  text-decoration: none;
-  color: #fff6b7; }
-
-.nav-tabs > div.active > a,
-.nav-tabs > div.active > a:focus,
-.nav-tabs > div.active > a:hover {
+  .nav-tabs div a {
+    border: none; }
+  .nav-tabs div a:hover, .nav-tabs div a:focus {
+    background-color: transparent !important;
+    border: none;
+    text-decoration: none;
+    color: #fff6b7; }
+.nav-tabs div.active a,
+.nav-tabs div.active a:focus,
+.nav-tabs div.active a:hover {
   background-color: transparent !important;
   border: none;
   color: #fff6b7;
   text-decoration: none; }
-
-a, a:active, a:focus {
-  outline: none; }
 
 .panels {
   margin: 0 auto;

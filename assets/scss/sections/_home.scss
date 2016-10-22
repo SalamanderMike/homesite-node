@@ -1,5 +1,6 @@
 .nav.nav-tabs {
 	position: relative;
+	top: -20px;
 	min-width: 482px;
 	width: 100%;
 	margin: 50px 0;
@@ -13,40 +14,42 @@
 }
 // PANEL BOX
 .tab-content{
-    background-color: #0c0c0c;
-    color: #fff;
-    padding: 1% 0% 1% 4%;
+	background-color: #0c0c0c;
+	color: #fff;
+	padding: 1% 0% 1% 4%;
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 }
-.nav-tabs > div > a{	
-	border: none;
+.nav-tabs {
+	div {
+		display: inline;
+		margin: 0 17px;
+
+		a {	
+			border: none;
+		}
+		a:hover, a:focus {
+			background-color: rgba(0, 0, 0, 0) !important;
+			border: none;
+			text-decoration: none;
+			color: #fff6b7;
+		}
+	}
+
+	div.active {
+		a,
+		a:focus,
+		a:hover {
+			background-color: rgba(0, 0, 0, 0) !important;
+			border: none;
+			color: #fff6b7;
+			text-decoration: none;
+		}
+	}
 }
-.nav-tabs > div {
-	display: inline;
-	margin: 0 17px;
-}
-// HOVERED TAB
-.nav-tabs > div > a:hover{
- 	background-color: rgba(0, 0, 0, 0) !important;
-    border: none;
-    text-decoration: none;
-    color: #fff6b7;
-}
-// SELECTED TAB
-.nav-tabs > div.active > a,
-.nav-tabs > div.active > a:focus,
-.nav-tabs > div.active > a:hover{
-    background-color: rgba(0, 0, 0, 0) !important;
-    border: none;
-    color: #fff6b7;
-    text-decoration: none;
-}
-// TO DISABLE BOXES AROUND CLICK AREAS IN FIREFOX
-a, a:active, a:focus {
-outline: none;
-}
+
+
 // PANEL BOX DIMENSIONS
 .panels {
 	margin: 0 auto;

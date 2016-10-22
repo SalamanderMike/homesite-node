@@ -21,38 +21,33 @@ body {
 	z-index: -10;
 }
 
-body section {
+.titles {
 	text-align: center;
 	font-size: 1.5em;
 	color: #fff6b7;
-}
 
-body h1, input {
-	color: #30659b;
-}
+	h1 {
+		color: #30659b;
+	}
+	p {
+		position: relative;
+		top: -20px;
+		margin-top: 0px;
+	}
 
-body label {
-	cursor: pointer;
-}
-
-
-.horizontal-line {
-    border-color: #1e1e1e;
-	width: 50%;
-}
-
-a.red {
-	color: #BF3F3F;
-	text-decoration: none;
-}
-
-.red:hover {
-	color: #BF593F;
-	text-decoration: none;
+	hr {
+	    border-color: #1e1e1e;
+		width: 50%;
+	}
 }
 
 .input-bg {
 	width: 90%;
 	background-color: #FAFADF;
 	color: #606060;
+}
+
+// TO DISABLE BOXES AROUND CLICK AREAS IN FIREFOX
+a, a:active, a:focus {
+outline: none;
 }

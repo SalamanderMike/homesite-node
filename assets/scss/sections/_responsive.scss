@@ -1,12 +1,12 @@
 // RESPONSIVE DESIGN (BROWSER SIZE)
-// test MEDIUM size
+// MEDIUM size
 @media (max-width: 815px) {
 	.nav.nav-tabs {
 		font-size: 1.55em;
 	}
 }
 
-// test SMALL size
+// SMALL size
 @media (max-width: 667px) {
 	#hide-tabs {
 		visibility: hidden;
@@ -32,8 +32,7 @@
 }
 
 // RESPONSIVE DESIGN (DEVICE)
-// iPhone size
-//  6 & 6s Portrait and Landscape
+// iPhone size 6 & 6s Portrait and Landscape
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
@@ -61,46 +60,45 @@
 	#options {
 		font-size: 2em;
 	}
-
 }
 
 
 
 
 
-// iPad size
-// Portrait 
-	@media only screen
-	  and (min-device-width: 768px)
-	  and (max-device-width: 1024px)
-	  and (orientation: portrait)
-	  and (-webkit-min-device-pixel-ratio: 1) {
+// // iPad size
+// // Portrait 
+// 	@media only screen
+// 	  and (min-device-width: 768px)
+// 	  and (max-device-width: 1024px)
+// 	  and (orientation: portrait)
+// 	  and (-webkit-min-device-pixel-ratio: 1) {
 
-	}
+// 	}
 
-// Landscape 
-	@media only screen
-	  and (min-device-width: 768px)
-	  and (max-device-width: 1024px)
-	  and (orientation: landscape)
-	  and (-webkit-min-device-pixel-ratio: 1) {
+// // Landscape 
+// 	@media only screen
+// 	  and (min-device-width: 768px)
+// 	  and (max-device-width: 1024px)
+// 	  and (orientation: landscape)
+// 	  and (-webkit-min-device-pixel-ratio: 1) {
 
-	}
+// 	}
 
-// iPhone size
-// 6 & 6s Portrait and Landscape 
-	@media only screen
-	  and (min-device-width: 375px)
-	  and (max-device-width: 667px)
-	  and (-webkit-min-device-pixel-ratio: 2) {
+// // iPhone size
+// // 6 & 6s Portrait and Landscape 
+// 	@media only screen
+// 	  and (min-device-width: 375px)
+// 	  and (max-device-width: 667px)
+// 	  and (-webkit-min-device-pixel-ratio: 2) {
 
-	}
+// 	}
 
-// 6+ Landscape 
-	@media only screen
-	  and (min-device-width: 414px)
-	  and (max-device-width: 736px)
-	  and (-webkit-min-device-pixel-ratio: 3)
-	  and (orientation: landscape) {
+// // 6+ Landscape 
+// 	@media only screen
+// 	  and (min-device-width: 414px)
+// 	  and (max-device-width: 736px)
+// 	  and (-webkit-min-device-pixel-ratio: 3)
+// 	  and (orientation: landscape) {
 
-	}
+// 	}
