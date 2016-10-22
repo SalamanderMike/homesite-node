@@ -4,13 +4,13 @@ var opbeat = require('opbeat').start({
 		secretToken: process.env.OPBEAT_SECRET_TOKEN
 	}),															// OPBEAT ANALYTICS
 	express = require('express'),
-	// Config = require('./assets/resources/config.js'),		// DISABLED FOR PRODUCTION
 	bodyParser  = require('body-parser'),
 	path = require('path'),
 	app = express();
 
 // DISABLED FOR PRODUCTION
-// var conf = new Config();
+var Config = require('./assets/resources/config.js');
+var conf = new Config();
 
 // Middleware
 app.use(bodyParser.urlencoded({extended: true}));

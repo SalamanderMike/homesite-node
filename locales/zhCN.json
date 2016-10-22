@@ -8,5 +8,6 @@
 	"HISTORY":			"來歷",
 	"LOCALE":			"語",
 
-	"chooseLanguage": 	"想要以普通话查看本网站"
+	"chooseLanguage": 	"想要以英文查看本網站? ",
+	"selectLanguage": 	"選擇語言 (Select Language)"
 }

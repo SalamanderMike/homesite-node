@@ -4,16 +4,18 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 	var app = this;
 	$scope.languages = ['中国（简体)','English'];
 	$scope.focusFocus = false;
+	$scope.toggle = true;
 	$scope.views = {
-		INTRO: 		true,
+		INTRO: 		false,
 		PROJECTS: 	false,
 		APIS: 		false,
 		HISTORY: 	false,
-		LOCALE: 	false
+		LOCALE: 	true
 	};
 
 
 // TEST AREA (HARD HAT REQUIRED)
+
 // END OF TEST AREA
 
 

@@ -1,6 +1,6 @@
 {
 	"TITLE":			"Michael McClure",
-	"SUBTITLE":			"Web Developer Engineer",
+	"SUBTITLE":			"Web Development Engineer",
 
 	"INTRO":			"INTRODUCE",
 	"PROJECTS":			"PROJECTS",
@@ -8,5 +8,6 @@
 	"HISTORY":			"HISTORY",
 	"LOCALE":			"LANGUAGE",
 
-	"chooseLanguage": 	"Want to view this site in Mandarin?"
+	"chooseLanguage": 	"Want to view this site in Mandarin? ",
+	"selectLanguage": 	"Select Language (選擇語言)"
 }

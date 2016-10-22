@@ -44,12 +44,20 @@
 
 		<div title="{{ 'LOCALE' | translate }}" class="tab-pane" ng-class="{active : views.LOCALE}">
 			<div class="content-position">
-				{{'chooseLanguage' | translate}}: 
-				<select ng-model="choice" 
-						ng-change="app.chooseLanguage(choice)" 
-						data-ng-options="choice for choice in languages">
-						<option value="" selected>Select Language</option>
-				</select>
+				{{'chooseLanguage' | translate}}
+				<span uib-dropdown class="dropdown-wrapper">
+					<button class="dropdown-button" type="button" uib-dropdown-toggle ng-click="toggle = !toggle">
+						{{ 'selectLanguage' | translate }} 
+						<i class="fa fa-caret-left" ng-show="toggle" aria-hidden="true">&nbsp;</i>
+						<i class="fa fa-caret-down" ng-hide="toggle" aria-hidden="true"></i>
+					</button>
+					<ul  role="menu" class="dropdown-menu" uib-dropdown-menu aria-labelledby="choose-language">
+						<li role="menuitem" ng-click="app.chooseLanguage(choice)" ng-repeat="choice in languages track by $index">
+							{{ choice }}
+						</li>
+					</ul>
+				</span>
+
 			</div>
 		</div>
 
