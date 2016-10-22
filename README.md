@@ -16,6 +16,7 @@ Back End:
 Front End:
 
 * AngularJS
+* SCSS (Sass)
 
 Dependencies:
 
