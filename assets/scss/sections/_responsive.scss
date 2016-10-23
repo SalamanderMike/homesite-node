@@ -77,10 +77,11 @@
 
 	.dropdown-wrapper {
 
-		.dropdown-button.needsclick {
+		.dropdown-button {
 		}
 
 		.dropdown-menu {
+			top: 100px;
 			width: 500px;
 			min-height: 100px;
 		}	

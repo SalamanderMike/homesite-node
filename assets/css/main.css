@@ -251,6 +251,7 @@ li {
       transform: translate3d(865px, 0, 0); }
 
   .dropdown-wrapper .dropdown-menu {
+    top: 100px;
     width: 500px;
     min-height: 100px; } }
 
