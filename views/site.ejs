@@ -40,9 +40,9 @@
 	</div>
 
 	<div title="{{ 'LOCALE' | translate }}" class="tab-pane" ng-class="{active : views.LOCALE}">
-		<div class="content-position">
+		<div class="content-position dropdown">
 			{{'chooseLanguage' | translate}}
-			<span uib-dropdown class="dropdown-wrapper">
+			<span uib-dropdown class="dropdown-wrapper dropdown">
 				<button class="dropdown-button" type="button" uib-dropdown-toggle ng-click="toggle = !toggle">
 					{{ 'selectLanguage' | translate }} 
 					<i class="fa fa-caret-left" ng-show="toggle" aria-hidden="true">&nbsp;</i>
