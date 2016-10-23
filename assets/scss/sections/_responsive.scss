@@ -75,9 +75,16 @@
 		}		
 	}
 
+	.dropdown-wrapper {
 
+		.dropdown-button.needsclick {
+		}
 
-
+		.dropdown-menu {
+			width: 500px;
+			min-height: 100px;
+		}	
+	}
 }
 
 
