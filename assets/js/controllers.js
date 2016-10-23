@@ -18,11 +18,7 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 	};
 
 // TEST AREA (HARD HAT REQUIRED)
-	(function() {
-		$('span.dropdown-toggle, button.dropdown-toggle, .dropdown-menu li').on('touchstart', function(e) {
-			e.stopPropagation();
-		});
-	})();
+
 // END OF TEST AREA
 
 

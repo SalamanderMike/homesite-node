@@ -186,7 +186,7 @@ li {
   -moz-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
   box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25); }
 
-.dropdown-wrapper .dropdown-button {
+.dropdown-wrapper .dropdown-button.dropdown-toggle {
   background: #ffffff;
   background: -moz-linear-gradient(-45deg, #ffffff 13%, #b5ddff 47%, #82f2ff 53%, #ffffff 92%);
   background: -webkit-linear-gradient(-45deg, #ffffff 13%, #b5ddff 47%, #82f2ff 53%, #ffffff 92%);
