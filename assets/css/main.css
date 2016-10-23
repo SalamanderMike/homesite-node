@@ -223,16 +223,16 @@ li {
   #drawer-show {
     visibility: visible; }
 
-  #drawer-activate {
+  #drawer-activate i {
     font-size: 4em; }
 
   .titles h1 {
-    font-size: 2em; }
+    font-size: 4em; }
   .titles p {
-    font-size: 2em; }
+    font-size: 4em; }
 
   .tab-pane {
     overflow: auto;
-    font-size: 2em; } }
+    font-size: 3em; } }
 
 /*# sourceMappingURL=main.css.map */

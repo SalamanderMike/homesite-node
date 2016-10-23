@@ -39,7 +39,9 @@
 
 <!-- LEFT SLIDING DRAWER -->
 	<div id="drawer-show">
-		<div ng-click="app.showLeft($event)" id="drawer-activate"><span class="fa fa-bars"></span></div>
+		<div ng-click="app.showLeft($event)" id="drawer-activate">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
 		<drawer visible="leftVisible" alignment="left">
 			<ul>
 				<li ng-bind="key | translate"  

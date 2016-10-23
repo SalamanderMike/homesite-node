@@ -31,21 +31,23 @@
 	}
 
 	#drawer-activate {
-		font-size: 4em;
+		i {
+			font-size: 4em;
+		}
 	}
 
 	.titles {
 		h1 {
-			font-size: 2em;
+			font-size: 4em;
 		}
 		p {
-			font-size: 2em;
+			font-size: 4em;
 		}
 	}
 
 	.tab-pane {
 		overflow: auto;
-		font-size: 2em;
+		font-size: 3em;
 	}
 }
 
