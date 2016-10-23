@@ -71,12 +71,6 @@
 	font-size: 1.2em;
 }
 
-// TABS AND PANELS (ELEMENT SPECIFIC)
-.done-true {
-	text-decoration: line-through;
-	color: grey;
-}
-
 .content-position {
 	position: relative;
 	margin: 0 19%;
@@ -86,14 +80,14 @@
 
 // SMALL VIEWPORT PANELS
 // PANEL BOX
-.content-box{
-	position: fixed;
-	top: 21%;
-	width: 100%;
-    background-color: #0c0c0c;
-    color: #fff;
-    padding: 1% 0% 1% 4%;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-}
+// .content-box {
+// 	position: fixed;
+// 	top: 21%;
+// 	width: 100%;
+//     background-color: #0c0c0c;
+//     color: #fff;
+//     padding: 1% 0% 1% 4%;
+// 	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
+// 	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
+// 	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
+// }

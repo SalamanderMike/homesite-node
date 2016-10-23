@@ -166,25 +166,10 @@ li {
   color: #dbdbdb;
   font-size: 1.2em; }
 
-.done-true {
-  text-decoration: line-through;
-  color: grey; }
-
 .content-position {
   position: relative;
   margin: 0 19%;
   text-align: left; }
-
-.content-box {
-  position: fixed;
-  top: 21%;
-  width: 100%;
-  background-color: #0c0c0c;
-  color: #fff;
-  padding: 1% 0% 1% 4%;
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-  box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25); }
 
 .dropdown-wrapper .dropdown-button {
   background: #ffffff;
@@ -250,9 +235,32 @@ li {
       -o-transform: translate3d(865px, 0, 0);
       transform: translate3d(865px, 0, 0); }
 
-  .dropdown-wrapper .dropdown-menu {
-    top: 100px;
-    width: 500px;
-    min-height: 100px; } }
+  .dropdown-wrapper {
+    text-align: center; }
+    .dropdown-wrapper .dropdown-button {
+      width: 600px;
+      padding: 40px 0px;
+      margin-top: 30px; }
+    .dropdown-wrapper .dropdown-menu {
+      background: black;
+      margin-top: 40px;
+      width: 600px;
+      border: 1px solid blue;
+      color: #30659b;
+      font-size: 1.5em;
+      text-align: center; }
+      .dropdown-wrapper .dropdown-menu li {
+        min-height: 100px; }
+
+  .center {
+    text-align: center; }
+
+  .tab-pane {
+    max-width: 850px;
+    min-height: 500px; }
+
+  .content-position {
+    margin: 0 3%;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

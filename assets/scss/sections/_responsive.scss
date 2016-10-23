@@ -76,15 +76,39 @@
 	}
 
 	.dropdown-wrapper {
+		text-align: center;
 
 		.dropdown-button {
+			width: 600px;
+			padding: 40px 0px;;
+			margin-top: 30px;
 		}
 
 		.dropdown-menu {
-			top: 100px;
-			width: 500px;
-			min-height: 100px;
+			background: black;
+			margin-top: 40px;
+			width: 600px;
+			border: 1px solid blue;
+			color: $dkBlue;
+			font-size: 1.5em;
+			text-align: center;
+
+			li {
+				min-height: 100px;
+			}
 		}	
+	}
+
+	.center {
+		text-align: center;
+	}
+	.tab-pane {
+		max-width: 850px;
+		min-height: 500px;
+	}
+	.content-position {
+		margin: 0 3%;
+		text-align: center;
 	}
 }
 
