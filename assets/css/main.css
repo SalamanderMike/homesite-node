@@ -217,23 +217,22 @@ li {
   #drawer-show {
     visibility: visible; } }
 @media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
-  body h1 {
-    font-size: 2em; }
-
-  body section {
-    font-size: 3em;
-    margin: 0 0 100px 0; }
-
   .nav.nav-tabs {
     visibility: hidden; }
 
   #drawer-show {
     visibility: visible; }
 
-  .tab-pane {
-    font-size: 3.5em; }
+  #drawer-activate {
+    font-size: 4em; }
 
-  #options {
+  .titles h1 {
+    font-size: 2em; }
+  .titles p {
+    font-size: 2em; }
+
+  .tab-pane {
+    overflow: auto;
     font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
