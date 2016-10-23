@@ -220,12 +220,6 @@ li {
   .nav.nav-tabs {
     visibility: hidden; }
 
-  #drawer-show {
-    visibility: visible; }
-
-  #drawer-activate i {
-    font-size: 3.5em; }
-
   .titles h1 {
     font-size: 4em; }
   .titles p {
@@ -236,19 +230,23 @@ li {
     font-size: 3em; }
 
   #map {
-    margin: 0 auto;
-    width: 800px; }
+    width: 850px; }
 
-  drawer div {
-    left: -900px;
-    width: 900px; }
-    drawer div ul li {
-      font-size: 92px; }
-  drawer div.show {
-    -webkit-transform: translate3d(865px, 0, 0);
-    -moz-transform: translate3d(865px, 0, 0);
-    -ms-transform: translate3d(865px, 0, 0);
-    -o-transform: translate3d(865px, 0, 0);
-    transform: translate3d(865px, 0, 0); } }
+  #drawer-show {
+    visibility: visible; }
+    #drawer-show #drawer-activate i {
+      font-size: 3em; }
+    #drawer-show drawer div {
+      left: -900px;
+      width: 900px; }
+      #drawer-show drawer div ul li {
+        max-width: 900px;
+        font-size: 100px; }
+    #drawer-show drawer div.show {
+      -webkit-transform: translate3d(865px, 0, 0);
+      -moz-transform: translate3d(865px, 0, 0);
+      -ms-transform: translate3d(865px, 0, 0);
+      -o-transform: translate3d(865px, 0, 0);
+      transform: translate3d(865px, 0, 0); } }
 
 /*# sourceMappingURL=main.css.map */

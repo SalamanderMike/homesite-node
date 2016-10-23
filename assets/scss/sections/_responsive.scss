@@ -26,16 +26,6 @@
 		visibility: hidden;
 	}
 
-	#drawer-show {
-		visibility: visible;
-	}
-
-	#drawer-activate {
-		i {
-			font-size: 3.5em;
-		}
-	}
-
 	.titles {
 		h1 {
 			font-size: 4em;
@@ -51,29 +41,40 @@
 	}
 
 	#map {
-		margin: 0 auto;
-		width: 800px;
+		width: 850px;
 	}
 
-	drawer {
+	#drawer-show {
+		visibility: visible;
 
-		div {
-			left: -900px;
-			width: 900px;
-			ul {
-				li {
-					font-size: 92px;
-				}
+		#drawer-activate {
+			i {
+				font-size: 3em;
 			}
 		}
-		div.show {
-			-webkit-transform: 	translate3d(865px, 0, 0);
-			-moz-transform: 	translate3d(865px, 0, 0);
-			-ms-transform: 		translate3d(865px, 0, 0);
-			-o-transform: 		translate3d(865px, 0, 0);
-			transform: 			translate3d(865px, 0, 0);
-		}
+
+		drawer {
+
+			div {
+				left: -900px;
+				width: 900px;
+				ul {
+					li {
+						max-width: 900px;
+						font-size: 100px;
+					}
+				}
+			}
+			div.show {
+				-webkit-transform: 	translate3d(865px, 0, 0);
+				-moz-transform: 	translate3d(865px, 0, 0);
+				-ms-transform: 		translate3d(865px, 0, 0);
+				-o-transform: 		translate3d(865px, 0, 0);
+				transform: 			translate3d(865px, 0, 0);
+			}
+		}		
 	}
+
 
 
 
