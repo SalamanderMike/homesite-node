@@ -2,6 +2,10 @@ Crtl = angular.module('Controllers', []);
 
 Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '$translate', function ($scope, $rootScope, $http, $timeout, $translate) {
 	var app = this;
+	var location,
+		mapOptions,
+		marker,
+		map;
 	$scope.languages = ['中国（简体)','English'];
 	$scope.focusFocus = false;
 	$scope.toggle = true;
@@ -12,7 +16,6 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 		HISTORY: 	false,
 		LOCALE: 	false
 	};
-
 
 // TEST AREA (HARD HAT REQUIRED)
 
@@ -32,25 +35,34 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 		};
 	})();
 
-
-
-	function initialize() {
-		var location = new google.maps.LatLng(37.7749, -122.4194);
-		var mapOptions = { 
+	function initMap() {
+		location = new google.maps.LatLng(37.7749, -122.4194);
+		mapOptions = { 
 			center: location,
 			zoom: 12,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 
-		var marker = new google.maps.Marker({
+		marker = new google.maps.Marker({
 		    position: location,
 		    title:"Best City In The World!"
 		});
 		map = new google.maps.Map(document.getElementById('map'), mapOptions);
 		marker.setMap(map);
 	};
-	
+	$timeout(function() {
+		initMap();		
+	},500)
 
+	app.refreshMaps = function() {
+		$timeout(function() {
+			map = new google.maps.Map(document.getElementById('map'), mapOptions);	
+		},100).then(function() {
+			google.maps.event.addListenerOnce(map, 'idle', function() {
+				google.maps.event.trigger(map, 'resize');
+			});
+		})
+	};
 
 
 // SECTION: NAV-TABS
@@ -64,11 +76,7 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 				views[page] = true;
 			};
 		});
-		if (tab === "APIS") {
-			$timeout(function() {
-				initialize();
-			},0);
-		};
+		if (tab === "APIS") app.refreshMaps();
 		$scope.views = views;
 		console.timeEnd("TAB-FUNCTION");						// PERFORMANCE TESTING
 	};

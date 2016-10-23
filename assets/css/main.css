@@ -49,6 +49,7 @@ a, a:active, a:focus {
   float: left;
   height: 300px;
   width: 400px;
+  box-shadow: inset 5px 7px 10px 0px rgba(255, 255, 255, 0.9);
   border: solid 2px #b0b0b0; }
 
 .map-spacer {
