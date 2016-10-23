@@ -6,7 +6,7 @@
 	"PROJECTS":			"工程",
 	"APIS":				"應用程式介面",
 	"HISTORY":			"來歷",
-	"LOCALE":			"語",
+	"LOCALE":			"語 (language)",
 
 	"chooseLanguage": 	"想要以英文查看本網站? ",
 	"selectLanguage": 	"選擇語言 (Select Language)"

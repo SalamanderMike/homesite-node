@@ -47,11 +47,11 @@ Router.run(function ($location, $rootScope) {
 // SLIDING SIDE MENU
 // LISTEN FOR CLICK TO CLOSE DRAWER
 Router.run(function ($rootScope) {
-	document.addEventListener('keyup', function (e) {                               	
+	document.addEventListener('keyup', function(e) {                               	
 		if (e.keyCode === 27) $rootScope.$broadcast('escapePressed', e.target);
 	});
 
-	document.addEventListener('click', function (e) {
+	document.addEventListener('click', function(e) {
 		$rootScope.$broadcast('documentClicked', e.target);
 	});
 });

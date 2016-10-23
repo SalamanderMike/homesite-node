@@ -1,67 +1,62 @@
 <% include ./partials/header.ejs %>
 
-<div>
-	<ul class="nav nav-tabs" id="hide-tabs">
-	    <div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
-			<a href="" ng-click="app.tabFunction(key)" ng-bind="key | translate"></a>
-	    </div> 
-	</ul> 
+<ul class="nav nav-tabs">
+	<div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
+		<a href="" ng-click="app.tabFunction(key)" ng-bind="key | translate"></a>
+	</div> 
+</ul> 
 
+<section class="tab-content">
 
-	<div class="tab-content">
-
-		<div title="{{ 'INTRO' | translate }}" class="tab-pane" ng-class="{active : views.INTRO}">
-			<p>Site under new construction! Feel free to explore the minimal content curently on this site, but please come back for more goodies later.</p><br>
-			<p>
-				If you'd like to see my code for this site, you can find it: 
-				<a href="https://github.com/SalamanderMike/homesite-node">HERE</a>
-			</p>
-			
-		</div>
-
-		<div title="{{ 'PROJECTS' | translate }}" class="tab-pane" ng-class="{active : views.PROJECTS}">
-			<p>
-				For now, please refer to my LinkedIn profile:
-				<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
-			</p>
-		</div>
-
-		<div title="{{ 'APIS' | translate }}" class="tab-pane" ng-class="{active : views.APIS}">
-			<p>
-				For now, please refer to my LinkedIn profile:
-				<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
-			</p> <br>
-			<div id="map"></div>
-			<div class="map-spacer"></div>
-		</div>
-
-		<div title="{{ 'HISTORY' | translate }}" class="tab-pane" ng-class="{active : views.HISTORY}">
-			<p>
-				For now, please refer to my LinkedIn profile:
-				<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
-			</p>
-		</div>
-
-		<div title="{{ 'LOCALE' | translate }}" class="tab-pane" ng-class="{active : views.LOCALE}">
-			<div class="content-position">
-				{{'chooseLanguage' | translate}}
-				<span uib-dropdown class="dropdown-wrapper">
-					<button class="dropdown-button" type="button" uib-dropdown-toggle ng-click="toggle = !toggle">
-						{{ 'selectLanguage' | translate }} 
-						<i class="fa fa-caret-left" ng-show="toggle" aria-hidden="true">&nbsp;</i>
-						<i class="fa fa-caret-down" ng-hide="toggle" aria-hidden="true"></i>
-					</button>
-					<ul  role="menu" class="dropdown-menu" uib-dropdown-menu aria-labelledby="choose-language">
-						<li role="menuitem" ng-click="app.chooseLanguage(choice)" ng-repeat="choice in languages track by $index">
-							{{ choice }}
-						</li>
-					</ul>
-				</span>
-
-			</div>
-		</div>
-
+	<div title="{{ 'INTRO' | translate }}" class="tab-pane" ng-class="{active : views.INTRO}">
+		<p>Site under new construction! Feel free to explore the minimal content curently on this site, but please come back for more goodies later.</p><br>
+		<p>
+			If you'd like to see my code for this site, you can find it: 
+			<a href="https://github.com/SalamanderMike/homesite-node">HERE</a>
+		</p>
 	</div>
-</div>
+
+	<div title="{{ 'PROJECTS' | translate }}" class="tab-pane" ng-class="{active : views.PROJECTS}">
+		<p>
+			For now, please refer to my LinkedIn profile:
+			<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
+		</p>
+	</div>
+
+	<div title="{{ 'APIS' | translate }}" class="tab-pane" ng-class="{active : views.APIS}">
+		<p>
+			For now, please refer to my LinkedIn profile:
+			<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
+		</p> <br>
+		<div id="map"></div>
+		<div class="map-spacer"></div>
+	</div>
+
+	<div title="{{ 'HISTORY' | translate }}" class="tab-pane" ng-class="{active : views.HISTORY}">
+		<p>
+			For now, please refer to my LinkedIn profile:
+			<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
+		</p>
+	</div>
+
+	<div title="{{ 'LOCALE' | translate }}" class="tab-pane" ng-class="{active : views.LOCALE}">
+		<div class="content-position">
+			{{'chooseLanguage' | translate}}
+			<span uib-dropdown class="dropdown-wrapper">
+				<button class="dropdown-button" type="button" uib-dropdown-toggle ng-click="toggle = !toggle">
+					{{ 'selectLanguage' | translate }} 
+					<i class="fa fa-caret-left" ng-show="toggle" aria-hidden="true">&nbsp;</i>
+					<i class="fa fa-caret-down" ng-hide="toggle" aria-hidden="true"></i>
+				</button>
+				<ul  role="menu" class="dropdown-menu" uib-dropdown-menu aria-labelledby="choose-language">
+					<li role="menuitem" ng-click="app.chooseLanguage(choice)" ng-repeat="choice in languages track by $index">
+						{{ choice }}
+					</li>
+				</ul>
+			</span>
+		</div>
+	</div>
+
+</section>
 
 <% include ./partials/footer.ejs %>

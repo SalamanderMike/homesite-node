@@ -41,11 +41,14 @@
 	<div id="drawer-show">
 		<div ng-click="app.showLeft($event)" id="drawer-activate"><span class="fa fa-bars"></span></div>
 		<drawer visible="leftVisible" alignment="left">
-			<div class="nav nav-tabs" id="spacer">
-				<div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
-					<a href="" ng-click="app.tabFunction(key)" ng-bind="key | translate"></a><br>
-				</div> 
-			</div>
+			<ul>
+				<li ng-bind="key | translate"  
+					class="drawer-tabs" 
+					ng-class="{ active:val }"
+					ng-click="app.tabFunction(key)" 
+					ng-repeat="(key,val) in views track by $index">
+				</li><br>
+			</ul>
 		</drawer>
 	</div>
 
@@ -54,26 +57,3 @@
 		<p translate="SUBTITLE"></p>
 		<hr>
 	</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-<!-- BROWSER WINDOW SIZE DETECTOR (connected to disabled .directive)-->
-<!-- 	<section responsive="partials/large.html" 
-	     smbreak=667
-	     smtemplate="partials/small.html"
-	     mdbreak=1024
-	     mdtemplate="partials/medium.html">
-	</section> -->

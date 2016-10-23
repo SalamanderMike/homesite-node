@@ -6,7 +6,7 @@
 	"PROJECTS":			"PROJECTS",
 	"APIS":				"APIs",
 	"HISTORY":			"HISTORY",
-	"LOCALE":			"LANGUAGE",
+	"LOCALE":			"LANGUAGE(語)",
 
 	"chooseLanguage": 	"Want to view this site in Mandarin? ",
 	"selectLanguage": 	"Select Language (選擇語言)"

@@ -8,35 +8,33 @@
 
 // SMALL size
 @media (max-width: 667px) {
-	#hide-tabs {
+	.nav.nav-tabs {
 		visibility: hidden;
 	}
-
 	#drawer-show {
 		visibility: visible;
 	}
 
-	drawer > div {
-	width: 500px;
-}
-	drawer > div {
-		left: -500px;
-	}
-	drawer > div.show {
-		transform: translate3d(500px, 0, 0);
-		-ms-transform: translate3d(500px, 0, 0);
-		-webkit-transform: translate3d(500px, 0, 0);
-		-o-transform: translate3d(500px, 0, 0);
-		-moz-transform: translate3d(500px, 0, 0);
-	}
+// 	drawer > div {
+// 	width: 500px;
+// }
+// 	drawer > div {
+// 		left: -500px;
+// 	}
+// 	drawer > div.show {
+// 		transform: translate3d(500px, 0, 0);
+// 		-ms-transform: translate3d(500px, 0, 0);
+// 		-webkit-transform: translate3d(500px, 0, 0);
+// 		-o-transform: translate3d(500px, 0, 0);
+// 		-moz-transform: translate3d(500px, 0, 0);
+// 	}
 }
 
 // RESPONSIVE DESIGN (DEVICE)
 // iPhone size 6 & 6s Portrait and Landscape
 @media only screen
-  and (min-device-width: 375px)
   and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-device-pixel-ratio: 2) {
 	body h1 {
 		font-size: 2em;
 	}
@@ -45,7 +43,7 @@
 		margin: 0 0 100px 0;
 	}
 
-	#hide-tabs {
+	.nav.nav-tabs {
 		visibility: hidden;
 	}
 

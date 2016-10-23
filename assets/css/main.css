@@ -42,6 +42,9 @@ body {
 a, a:active, a:focus {
   outline: none; }
 
+li {
+  list-style-type: none; }
+
 #map {
   position: relative;
   top: 0px;
@@ -49,7 +52,7 @@ a, a:active, a:focus {
   float: left;
   height: 300px;
   width: 400px;
-  box-shadow: inset 5px 7px 10px 0px rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 30px 0px blue;
   border: solid 2px #b0b0b0; }
 
 .map-spacer {
@@ -58,59 +61,53 @@ a, a:active, a:focus {
 
 #drawer-show {
   visibility: hidden; }
-
-#drawer-activate {
-  position: fixed;
-  top: 5px;
-  left: 20px;
-  font-size: 4em;
-  color: #fff6b7;
-  cursor: pointer; }
-
-#spacer {
-  top: 100px; }
-
-.border-box {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
-drawer {
-  display: block; }
-
-drawer > div {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  width: 700px;
-  height: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-transition: -webkit-transform ease 250ms;
-  -moz-transition: -webkit-transform ease 250ms;
-  -ms-transition: -webkit-transform ease 250ms;
-  -o-transition: -webkit-transform ease 250ms;
-  transition: -webkit-transform ease 250ms;
-  -webkit-transition: transform ease 250ms;
-  -moz-transition: transform ease 250ms;
-  -ms-transition: transform ease 250ms;
-  -o-transition: transform ease 250ms;
-  transition: transform ease 250ms; }
-
-drawer > div {
-  background: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  left: -700px;
-  font-size: 4em; }
-
-drawer > div.show {
-  transform: translate3d(700px, 0, 0);
-  -ms-transform: translate3d(700px, 0, 0);
-  -webkit-transform: translate3d(700px, 0, 0);
-  -o-transform: translate3d(700px, 0, 0);
-  -moz-transform: translate3d(700px, 0, 0); }
-
-drawer > div > div:hover {
-  color: #30659b; }
+  #drawer-show #drawer-activate {
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    color: #fff6b7;
+    font-size: 42px;
+    cursor: pointer; }
+  #drawer-show drawer {
+    display: block; }
+    #drawer-show drawer div {
+      background: black;
+      position: fixed;
+      top: 0px;
+      bottom: -3px;
+      left: -700px;
+      width: 700px;
+      box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 255, 0.5);
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-transition: -webkit-transform ease 250ms;
+      -moz-transition: -webkit-transform ease 250ms;
+      -ms-transition: -webkit-transform ease 250ms;
+      -o-transition: -webkit-transform ease 250ms;
+      transition: -webkit-transform ease 250ms;
+      -webkit-transition: transform ease 250ms;
+      -moz-transition: transform ease 250ms;
+      -ms-transition: transform ease 250ms;
+      -o-transition: transform ease 250ms;
+      transition: transform ease 250ms;
+      z-index: 2; }
+      #drawer-show drawer div ul {
+        position: relative;
+        text-align: right; }
+        #drawer-show drawer div ul li {
+          max-width: 700px;
+          padding: 3% 10%;
+          font-size: 72px;
+          color: #30659b;
+          cursor: pointer; }
+        #drawer-show drawer div ul li:hover {
+          color: #fff6b7; }
+    #drawer-show drawer div.show {
+      -webkit-transform: translate3d(665px, 0, 0);
+      -moz-transform: translate3d(665px, 0, 0);
+      -ms-transform: translate3d(665px, 0, 0);
+      -o-transform: translate3d(665px, 0, 0);
+      transform: translate3d(665px, 0, 0); }
 
 .nav.nav-tabs {
   position: relative;
@@ -214,25 +211,12 @@ drawer > div > div:hover {
   .nav.nav-tabs {
     font-size: 1.55em; } }
 @media (max-width: 667px) {
-  #hide-tabs {
+  .nav.nav-tabs {
     visibility: hidden; }
 
   #drawer-show {
-    visibility: visible; }
-
-  drawer > div {
-    width: 500px; }
-
-  drawer > div {
-    left: -500px; }
-
-  drawer > div.show {
-    transform: translate3d(500px, 0, 0);
-    -ms-transform: translate3d(500px, 0, 0);
-    -webkit-transform: translate3d(500px, 0, 0);
-    -o-transform: translate3d(500px, 0, 0);
-    -moz-transform: translate3d(500px, 0, 0); } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    visibility: visible; } }
+@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
   body h1 {
     font-size: 2em; }
 
@@ -240,7 +224,7 @@ drawer > div > div:hover {
     font-size: 3em;
     margin: 0 0 100px 0; }
 
-  #hide-tabs {
+  .nav.nav-tabs {
     visibility: hidden; }
 
   #drawer-show {
