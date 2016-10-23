@@ -224,15 +224,31 @@ li {
     visibility: visible; }
 
   #drawer-activate i {
-    font-size: 4em; }
+    font-size: 3.5em; }
 
   .titles h1 {
     font-size: 4em; }
   .titles p {
-    font-size: 4em; }
+    font-size: 3em; }
 
   .tab-pane {
     overflow: auto;
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  #map {
+    margin: 0 auto;
+    width: 800px; }
+
+  drawer div {
+    left: -900px;
+    width: 900px; }
+    drawer div ul li {
+      font-size: 92px; }
+  drawer div.show {
+    -webkit-transform: translate3d(865px, 0, 0);
+    -moz-transform: translate3d(865px, 0, 0);
+    -ms-transform: translate3d(865px, 0, 0);
+    -o-transform: translate3d(865px, 0, 0);
+    transform: translate3d(865px, 0, 0); } }
 
 /*# sourceMappingURL=main.css.map */

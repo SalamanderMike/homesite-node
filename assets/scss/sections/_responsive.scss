@@ -32,7 +32,7 @@
 
 	#drawer-activate {
 		i {
-			font-size: 4em;
+			font-size: 3.5em;
 		}
 	}
 
@@ -41,7 +41,7 @@
 			font-size: 4em;
 		}
 		p {
-			font-size: 4em;
+			font-size: 3em;
 		}
 	}
 
@@ -49,6 +49,34 @@
 		overflow: auto;
 		font-size: 3em;
 	}
+
+	#map {
+		margin: 0 auto;
+		width: 800px;
+	}
+
+	drawer {
+
+		div {
+			left: -900px;
+			width: 900px;
+			ul {
+				li {
+					font-size: 92px;
+				}
+			}
+		}
+		div.show {
+			-webkit-transform: 	translate3d(865px, 0, 0);
+			-moz-transform: 	translate3d(865px, 0, 0);
+			-ms-transform: 		translate3d(865px, 0, 0);
+			-o-transform: 		translate3d(865px, 0, 0);
+			transform: 			translate3d(865px, 0, 0);
+		}
+	}
+
+
+
 }
 
 
