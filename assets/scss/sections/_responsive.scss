@@ -22,27 +22,51 @@
   and (max-device-width: 667px)
   and (-webkit-device-pixel-ratio: 2) {
 
-	.nav.nav-tabs {
-		visibility: hidden;
-	}
-
 	.titles {
 		h1 {
 			font-size: 4em;
+		}
+		hr {
+			margin-top: -60px;
+		    border-color: #1e1e1e;
+			width: 50%;
 		}
 		p {
 			font-size: 3em;
 		}
 	}
 
-	.tab-pane {
-		overflow: auto;
-		font-size: 3em;
+	.nav.nav-tabs {
+		visibility: hidden;
 	}
 
-	#map {
-		width: 850px;
+	.tab-content {
+
+		.tab-pane {
+			max-width: 100%;
+			min-height: 500px;
+
+			p {
+				font-size: 2em;
+			}
+		}
+		.content-position {
+			margin: 0 3%;
+			text-align: center;
+		}		
 	}
+
+	.map-wrapper {
+		text-align: center;
+
+		#map {
+			position: relative;
+			left: 0;
+			right: 0;
+			width: 100%;
+		}		
+	}
+
 
 	#drawer-show {
 		visibility: visible;
@@ -82,6 +106,7 @@
 			width: 600px;
 			padding: 40px 0px;;
 			margin-top: 30px;
+			font-size: 2.3em;
 		}
 
 		.dropdown-menu {
@@ -92,23 +117,12 @@
 			color: $dkBlue;
 			font-size: 1.5em;
 			text-align: center;
+			font-size: 3.3em;
 
 			li {
 				min-height: 100px;
 			}
 		}	
-	}
-
-	.center {
-		text-align: center;
-	}
-	.tab-pane {
-		max-width: 850px;
-		min-height: 500px;
-	}
-	.content-position {
-		margin: 0 3%;
-		text-align: center;
 	}
 }
 

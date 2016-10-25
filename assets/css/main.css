@@ -20,32 +20,17 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   z-index: -10; }
 
-.titles {
-  text-align: center;
-  font-size: 1.5em;
-  color: #fff6b7; }
-  .titles h1 {
-    color: #30659b; }
-  .titles p {
-    position: relative;
-    top: -20px;
-    margin-top: 0px; }
-  .titles hr {
-    border-color: #1e1e1e;
-    width: 50%; }
-
-.input-bg {
-  width: 90%;
-  background-color: #FAFADF;
-  color: #606060; }
-
 a, a:active, a:focus {
-  outline: none; }
+  outline: none;
+  border: none; }
 
 li {
   list-style-type: none; }
 
-#map {
+.center {
+  text-align: center; }
+
+.map-wrapper #map {
   position: relative;
   top: 0px;
   right: 0px;
@@ -110,66 +95,68 @@ li {
       -o-transform: translate3d(665px, 0, 0);
       transform: translate3d(665px, 0, 0); }
 
+.titles {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff6b7; }
+  .titles h1 {
+    color: #30659b; }
+  .titles hr {
+    margin-top: -30px;
+    border-color: #1e1e1e;
+    width: 25%; }
+  .titles p {
+    position: relative;
+    top: -10px; }
+
 .nav.nav-tabs {
   position: relative;
-  top: -20px;
+  top: 10px;
+  left: 0px;
+  right: 0px;
   min-width: 482px;
   width: 100%;
-  margin: 50px 0;
+  margin: 15px;
   text-align: center;
   font-size: 2em; }
 
 .nav-tabs {
   background-color: transparent;
   border: none; }
+  .nav-tabs div {
+    display: inline;
+    margin: 0 17px; }
+    .nav-tabs div a:hover, .nav-tabs div a:focus {
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      color: #fff6b7; }
+  .nav-tabs div.active a,
+  .nav-tabs div.active a:focus,
+  .nav-tabs div.active a:hover {
+    background-color: transparent;
+    border: none;
+    color: #fff6b7;
+    text-decoration: none; }
 
 .tab-content {
   background-color: #0c0c0c;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  min-height: 200px;
   color: #fff;
-  padding: 1% 0% 1% 4%;
   -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
   -moz-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
   box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25); }
-
-.nav-tabs div {
-  display: inline;
-  margin: 0 17px; }
-  .nav-tabs div a {
-    border: none; }
-  .nav-tabs div a:hover, .nav-tabs div a:focus {
-    background-color: transparent !important;
-    border: none;
-    text-decoration: none;
-    color: #fff6b7; }
-.nav-tabs div.active a,
-.nav-tabs div.active a:focus,
-.nav-tabs div.active a:hover {
-  background-color: transparent !important;
-  border: none;
-  color: #fff6b7;
-  text-decoration: none; }
-
-.panels {
-  margin: 0 auto;
-  width: 64%;
-  max-width: 800px; }
-
-.tab-pane {
-  width: 100%;
-  margin: 3%;
-  color: #dbdbdb;
-  font-family: 'Muli', sans-serif;
-  font-size: 1.2em; }
-
-.content {
-  margin: 3%;
-  color: #dbdbdb;
-  font-size: 1.2em; }
-
-.content-position {
-  position: relative;
-  margin: 0 19%;
-  text-align: left; }
+  .tab-content .tab-pane {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin: 3%;
+    color: #dbdbdb;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2em; }
 
 .dropdown-wrapper .dropdown-button {
   background: #ffffff;
@@ -181,7 +168,8 @@ li {
   -moz-border-radius: 2px;
   border-radius: 2px;
   color: #5A5A5A;
-  padding: 1px 10px; }
+  padding: 1px 10px;
+  font-size: 1em; }
 .dropdown-wrapper .dropdown-button:hover {
   -webkit-filter: brightness(90%);
   filter: brightness(90%); }
@@ -189,6 +177,7 @@ li {
   background: white;
   width: 246px;
   color: grey;
+  font-size: 1em;
   cursor: pointer; }
   .dropdown-wrapper .dropdown-menu li:hover {
     background: #EEEEEE; }
@@ -203,20 +192,34 @@ li {
   #drawer-show {
     visibility: visible; } }
 @media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
-  .nav.nav-tabs {
-    visibility: hidden; }
-
   .titles h1 {
     font-size: 4em; }
+  .titles hr {
+    margin-top: -60px;
+    border-color: #1e1e1e;
+    width: 50%; }
   .titles p {
     font-size: 3em; }
 
-  .tab-pane {
-    overflow: auto;
-    font-size: 3em; }
+  .nav.nav-tabs {
+    visibility: hidden; }
 
-  #map {
-    width: 850px; }
+  .tab-content .tab-pane {
+    max-width: 100%;
+    min-height: 500px; }
+    .tab-content .tab-pane p {
+      font-size: 2em; }
+  .tab-content .content-position {
+    margin: 0 3%;
+    text-align: center; }
+
+  .map-wrapper {
+    text-align: center; }
+    .map-wrapper #map {
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 100%; }
 
   #drawer-show {
     visibility: visible; }
@@ -240,7 +243,8 @@ li {
     .dropdown-wrapper .dropdown-button {
       width: 600px;
       padding: 40px 0px;
-      margin-top: 30px; }
+      margin-top: 30px;
+      font-size: 2.3em; }
     .dropdown-wrapper .dropdown-menu {
       background: black;
       margin-top: 40px;
@@ -248,19 +252,9 @@ li {
       border: 1px solid blue;
       color: #30659b;
       font-size: 1.5em;
-      text-align: center; }
+      text-align: center;
+      font-size: 3.3em; }
       .dropdown-wrapper .dropdown-menu li {
-        min-height: 100px; }
-
-  .center {
-    text-align: center; }
-
-  .tab-pane {
-    max-width: 850px;
-    min-height: 500px; }
-
-  .content-position {
-    margin: 0 3%;
-    text-align: center; } }
+        min-height: 100px; } }
 
 /*# sourceMappingURL=main.css.map */

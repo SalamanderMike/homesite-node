@@ -28,7 +28,10 @@
 			For now, please refer to my LinkedIn profile:
 			<a href="http://www.linkedin.com/in/michael-mcclure-69494655">HERE</a>
 		</p> <br>
-		<div id="map"></div>
+		<div class="map-wrapper">
+			<div id="map"></div>			
+		</div>
+
 		<div class="map-spacer"></div>
 	</div>
 
@@ -39,9 +42,9 @@
 		</p>
 	</div>
 
-	<div title="{{ 'LOCALE' | translate }}" class="tab-pane" ng-class="{active : views.LOCALE}">
-		<div class="content-position center">
-			{{'chooseLanguage' | translate}}
+	<div title="{{ 'LOCALE' | translate }}" class="tab-pane center" ng-class="{active : views.LOCALE}">
+		<!-- <div class="content-position"> -->
+			<p>{{'chooseLanguage' | translate}}</p>	
 			<span uib-dropdown class="dropdown-wrapper">
 				<button class="dropdown-button" type="button" uib-dropdown-toggle ng-click="toggle = !toggle">
 					{{ 'selectLanguage' | translate }} 
@@ -54,7 +57,7 @@
 					</li>
 				</ul>
 			</span>
-		</div>
+		<!-- </div> -->
 	</div>
 
 </section>
