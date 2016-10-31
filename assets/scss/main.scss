@@ -13,11 +13,11 @@
 @import "theme.scss";
 
 // CSS Setting for each section.
-@import "sections/apis.scss";
 @import "sections/drawer.scss";
-@import "sections/history.scss";
 @import "sections/home.scss";
 @import "sections/intro.scss";
-@import "sections/locale.scss";
 @import "sections/projects.scss";
+@import "sections/apis.scss";
+@import "sections/history.scss";
+@import "sections/locale.scss";
 @import "sections/responsive.scss";

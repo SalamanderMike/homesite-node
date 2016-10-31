@@ -30,71 +30,6 @@ li {
 .center {
   text-align: center; }
 
-.map-wrapper #map {
-  position: relative;
-  top: 0px;
-  right: 0px;
-  float: left;
-  height: 300px;
-  width: 400px;
-  box-shadow: 0px 0px 30px 0px blue;
-  border: solid 2px #b0b0b0; }
-
-.map-spacer {
-  position: relative;
-  margin: 300px; }
-
-#drawer-show {
-  visibility: hidden; }
-  #drawer-show #drawer-activate {
-    position: fixed;
-    top: 5px;
-    left: 20px;
-    color: #fff6b7;
-    font-size: 42px;
-    cursor: pointer; }
-  #drawer-show drawer {
-    display: block; }
-    #drawer-show drawer div {
-      background: black;
-      position: fixed;
-      top: 0px;
-      bottom: -3px;
-      left: -700px;
-      width: 695px;
-      border-right: 4px solid rgba(200, 200, 200, 0.1);
-      box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 255, 0.5);
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-transition: -webkit-transform ease 250ms;
-      -moz-transition: -webkit-transform ease 250ms;
-      -ms-transition: -webkit-transform ease 250ms;
-      -o-transition: -webkit-transform ease 250ms;
-      transition: -webkit-transform ease 250ms;
-      -webkit-transition: transform ease 250ms;
-      -moz-transition: transform ease 250ms;
-      -ms-transition: transform ease 250ms;
-      -o-transition: transform ease 250ms;
-      transition: transform ease 250ms;
-      z-index: 2; }
-      #drawer-show drawer div ul {
-        position: relative;
-        text-align: right; }
-        #drawer-show drawer div ul li {
-          max-width: 700px;
-          padding: 3% 10%;
-          font-size: 72px;
-          color: #30659b;
-          cursor: pointer; }
-        #drawer-show drawer div ul li:hover {
-          color: #fff6b7; }
-    #drawer-show drawer div.show {
-      -webkit-transform: translate3d(665px, 0, 0);
-      -moz-transform: translate3d(665px, 0, 0);
-      -ms-transform: translate3d(665px, 0, 0);
-      -o-transform: translate3d(665px, 0, 0);
-      transform: translate3d(665px, 0, 0); }
-
 .titles {
   text-align: center;
   font-size: 1.5em;
@@ -157,6 +92,71 @@ li {
     color: #dbdbdb;
     font-family: 'Muli', sans-serif;
     font-size: 1.2em; }
+
+#drawer-show {
+  visibility: hidden; }
+  #drawer-show #drawer-activate {
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    color: #fff6b7;
+    font-size: 42px;
+    cursor: pointer; }
+  #drawer-show drawer {
+    display: block; }
+    #drawer-show drawer div {
+      background: black;
+      position: fixed;
+      top: 0px;
+      bottom: -3px;
+      left: -700px;
+      width: 695px;
+      border-right: 4px solid rgba(200, 200, 200, 0.1);
+      box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 255, 0.5);
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-transition: -webkit-transform ease 250ms;
+      -moz-transition: -webkit-transform ease 250ms;
+      -ms-transition: -webkit-transform ease 250ms;
+      -o-transition: -webkit-transform ease 250ms;
+      transition: -webkit-transform ease 250ms;
+      -webkit-transition: transform ease 250ms;
+      -moz-transition: transform ease 250ms;
+      -ms-transition: transform ease 250ms;
+      -o-transition: transform ease 250ms;
+      transition: transform ease 250ms;
+      z-index: 2; }
+      #drawer-show drawer div ul {
+        position: relative;
+        text-align: right; }
+        #drawer-show drawer div ul li {
+          max-width: 700px;
+          padding: 3% 10%;
+          font-size: 72px;
+          color: #30659b;
+          cursor: pointer; }
+        #drawer-show drawer div ul li:hover {
+          color: #fff6b7; }
+    #drawer-show drawer div.show {
+      -webkit-transform: translate3d(665px, 0, 0);
+      -moz-transform: translate3d(665px, 0, 0);
+      -ms-transform: translate3d(665px, 0, 0);
+      -o-transform: translate3d(665px, 0, 0);
+      transform: translate3d(665px, 0, 0); }
+
+.map-wrapper {
+  text-align: center; }
+  .map-wrapper #map {
+    position: relative;
+    top: 0px;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0px 0px 30px 0px blue;
+    border: solid 2px #b0b0b0; }
+
+.map-spacer {
+  position: relative;
+  margin: 300px; }
 
 .dropdown-wrapper .dropdown-button {
   background: #ffffff;

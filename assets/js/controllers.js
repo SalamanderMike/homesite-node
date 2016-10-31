@@ -17,11 +17,6 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 		LOCALE: 	false
 	};
 
-// TEST AREA (HARD HAT REQUIRED)
-
-// END OF TEST AREA
-
-
 // GOOGLE MAPS
 	(function() {
 		$http.get('/config').then(function(response) {
@@ -57,7 +52,7 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 	app.refreshMaps = function() {
 		$timeout(function() {
 			map = new google.maps.Map(document.getElementById('map'), mapOptions);	
-		},100).then(function() {
+		},0).then(function() {
 			google.maps.event.addListenerOnce(map, 'idle', function() {
 				google.maps.event.trigger(map, 'resize');
 			});
@@ -80,6 +75,11 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 		$scope.views = views;
 		console.timeEnd("TAB-FUNCTION");						// PERFORMANCE TESTING
 	};
+
+
+
+// TEST AREA (HARD HAT REQUIRED)
+// END OF TEST AREA
 
 
 
@@ -111,12 +111,6 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 			app.close(); 
 		});
 	};
-
-
-
-
-
-
 
 // SECTION: TRANSLATION
 	app.chooseLanguage = function (lang) {
