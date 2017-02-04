@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/SalamanderMike/homesite-node#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "bower": "^1.7.9",
-    "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "opbeat": "^3.19.1"
+    "body-parser": "^1.16.2",
+    "bower": "^1.8.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "opbeat": "^3.21.1"
   }
 }
