@@ -4,7 +4,7 @@ var opbeat = require('opbeat').start({
 		secretToken: process.env.OPBEAT_SECRET_TOKEN
 	}),															// OPBEAT ANALYTICS
 	express = require('express'),
-	bodyParser  = require('body-parser'),
+	bodyParser = require('body-parser'),
 	path = require('path'),
 	app = express();
 
