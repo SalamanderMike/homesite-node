@@ -4,13 +4,17 @@
 	"description": "home SPA site for Michael McClure",
 	"main": "server.js",
 	"dependencies": {
-		"body-parser": "1.16.1",
+		"body-parser": "1.16.0",
 		"bower": "1.8.0",
 		"ejs": "2.5.6",
 		"express": "4.15.2",
 		"opbeat": "^3.21.1"
 	},
 	"devDependencies": {},
+	"engines": {
+		"node": "7.7.4",
+		"npm": "4.1.2"
+	},
 	"scripts": {
 		"test": "none",
 		"start": "node server.js"
