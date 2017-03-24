@@ -9,12 +9,16 @@
 		"ejs": "2.5.6",
 		"express": "4.15.2"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"body-parser": "1.15.2",
+		"bower": "1.8.0",
+		"ejs": "2.5.6",
+		"express": "4.15.2"
+	},
 	"engines": {
 		"node": "7.7.4"
 	},
 	"scripts": {
-		"prestart": "express build",
 		"start": "node server.js"
 	},
 	"repository": {
