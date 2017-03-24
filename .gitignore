@@ -1,5 +1,7 @@
 .DS_Store
 **/config.js
+/node_modules
+/bower_components
 assets/css/main.css.map/
 assets/.sass-cache/
 *.scssc
