@@ -29,7 +29,7 @@ app.use(opbeat.middleware.express());							// ANALYTICS
 
 // APIs
 var env = process.env.GOOGLE_KEY || 'develop';
-app.get('/config', function(req, res) {
+app.get('/views/config', function(req, res) {
 	if (env !== 'develop') {
 		res.send(env);
 	} else {
