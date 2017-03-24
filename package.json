@@ -14,7 +14,7 @@
 		"node": "7.7.4"
 	},
 	"scripts": {
-		"test": "none",
+		"prestart": "express build",
 		"start": "node server.js"
 	},
 	"repository": {
