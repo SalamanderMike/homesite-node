@@ -24,7 +24,7 @@ app.use('/locales', express.static(path.join(__dirname + '/locales')));						// 
 app.use('/bower_components', express.static(path.join(__dirname + '/bower_components')));	// PLACE BOWER REQUIREMENTS
 app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
-// app.use(opbeat.middleware.express());							// ANALYTICS
+app.use(opbeat.middleware.express());							// ANALYTICS
 
 
 // APIs
