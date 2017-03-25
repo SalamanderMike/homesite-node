@@ -11,10 +11,8 @@
 	},
 	"devDependencies": {},
 	"engines": {
-		"node": "7.7.4"
-	},
-	"scripts": {
-		"start": "node server.js"
+		"node": "7.7.4",
+		"npm": "4.1.2"
 	},
 	"repository": {
 		"type": "git",
@@ -28,5 +26,5 @@
 	"bugs": {
 		"url": "https://github.com/SalamanderMike/homesite-node/issues"
 	},
-	"homepage": "http://www.michaeljohnmcclure.com"
+	"homepage": "https://github.com/SalamanderMike/homesite-node"
 }
