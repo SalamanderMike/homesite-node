@@ -1,30 +1,31 @@
 {
-	"name": "homesite_node",
-	"version": "0.0.2",
-	"description": "home SPA site for Michael McClure",
-	"main": "server.js",
-	"dependencies": {
-		"body-parser": "1.16.1",
-		"bower": "1.8.0",
-		"ejs": "2.5.6",
-		"express": "4.15.2"
-	},
-	"devDependencies": {},
-	"engines": {
-		"node": "7.7.4",
-		"npm": "4.1.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/SalamanderMike/homesite-node.git"
-	},
-	"keywords": [
-		"michael mcclure"
-	],
-	"author": "Michael McClure",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/SalamanderMike/homesite-node/issues"
-	},
-	"homepage": "https://github.com/SalamanderMike/homesite-node"
+  "name": "homesite_node",
+  "version": "0.0.2",
+  "description": "home SPA site for Michael McClure",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "1.16.1",
+    "bower": "1.8.0",
+    "ejs": "2.5.6",
+    "express": "4.15.2",
+    "opbeat": "^4.12.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "7.7.4",
+    "npm": "4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalamanderMike/homesite-node.git"
+  },
+  "keywords": [
+    "michael mcclure"
+  ],
+  "author": "Michael McClure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SalamanderMike/homesite-node/issues"
+  },
+  "homepage": "https://github.com/SalamanderMike/homesite-node"
 }

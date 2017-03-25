@@ -1,9 +1,8 @@
-var 
-	// opbeat = require('opbeat').start({
-	// 	appId: process.env.OPBEAT_APP_ID,
-	// 	organizationId: process.env.OPBEAT_ORGANIZATION_ID,
-	// 	secretToken: process.env.OPBEAT_SECRET_TOKEN
-	// }),															// OPBEAT ANALYTICS
+var opbeat = require('opbeat').start({
+		appId: process.env.OPBEAT_APP_ID,
+		organizationId: process.env.OPBEAT_ORGANIZATION_ID,
+		secretToken: process.env.OPBEAT_SECRET_TOKEN
+	}),															// OPBEAT ANALYTICS
 	express = require('express'),
 	bodyParser = require('body-parser'),
 	path = require('path'),
@@ -29,14 +28,14 @@ app.set('view engine', 'ejs');
 
 
 // APIs
-// var env = process.env.GOOGLE_KEY || 'develop';
-// app.get('/config', function(req, res) {
-// 	if (env !== 'develop') {
-// 		res.send(env);
-// 	} else {
-// 		res.send(conf.GOOG);
-// 	};
-// });
+var env = process.env.GOOGLE_KEY || 'develop';
+app.get('/config', function(req, res) {
+	if (env !== 'develop') {
+		res.send(env);
+	} else {
+		res.send(conf.GOOG);
+	};
+});
 
 
 // ROUTES

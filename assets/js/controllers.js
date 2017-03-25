@@ -18,46 +18,46 @@ Crtl.controller('AppController', ['$scope', '$rootScope', '$http', '$timeout', '
 	};
 
 // GOOGLE MAPS
-	// (function() {
-	// 	$http.get('/config').then(function(response) {
-	// 		var map_auth = "https://maps.googleapis.com/maps/api/js?key="+ response.data;
-	// 		var script = document.createElement('script');
-	// 		script.type = 'text/javascript';
-	// 		script.src = map_auth;
-	// 		document.body.appendChild(script);
-	// 	}), function(err) {
-	// 		console.log("Could Not Find ENV Variable", err);
-	// 	};
-	// })();
+	(function() {
+		$http.get('/config').then(function(response) {
+			var map_auth = "https://maps.googleapis.com/maps/api/js?key="+ response.data;
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = map_auth;
+			document.body.appendChild(script);
+		}), function(err) {
+			console.log("Could Not Find ENV Variable", err);
+		};
+	})();
 
-	// function initMap() {
-	// 	location = new google.maps.LatLng(37.7749, -122.4194);
-	// 	mapOptions = { 
-	// 		center: location,
-	// 		zoom: 12,
-	// 		mapTypeId: google.maps.MapTypeId.ROADMAP
-	// 	};
+	function initMap() {
+		location = new google.maps.LatLng(37.7749, -122.4194);
+		mapOptions = { 
+			center: location,
+			zoom: 12,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
 
-	// 	marker = new google.maps.Marker({
-	// 	    position: location,
-	// 	    title:"Best City In The World!"
-	// 	});
-	// 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	// 	marker.setMap(map);
-	// };
-	// $timeout(function() {
-	// 	initMap();		
-	// },500)
+		marker = new google.maps.Marker({
+		    position: location,
+		    title:"Best City In The World!"
+		});
+		map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		marker.setMap(map);
+	};
+	$timeout(function() {
+		initMap();		
+	},500)
 
-	// app.refreshMaps = function() {
-	// 	$timeout(function() {
-	// 		map = new google.maps.Map(document.getElementById('map'), mapOptions);	
-	// 	},0).then(function() {
-	// 		google.maps.event.addListenerOnce(map, 'idle', function() {
-	// 			google.maps.event.trigger(map, 'resize');
-	// 		});
-	// 	})
-	// };
+	app.refreshMaps = function() {
+		$timeout(function() {
+			map = new google.maps.Map(document.getElementById('map'), mapOptions);	
+		},0).then(function() {
+			google.maps.event.addListenerOnce(map, 'idle', function() {
+				google.maps.event.trigger(map, 'resize');
+			});
+		})
+	};
 
 
 // SECTION: NAV-TABS
